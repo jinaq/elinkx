@@ -16,6 +16,7 @@ COPY ["ELinkx.csproj", "./"]
 RUN dotnet restore "ELinkx.csproj"
 COPY . .
 
+
 WORKDIR "/src/"
 
 

@@ -97,7 +97,13 @@ namespace ELinkx.Model
         public void Save()
         {
             var serializer = new XmlSerializer(typeof(Customers));
-            using var writer = new FileStream("cusomers.xml", FileMode.Truncate);
+            
+            var path = "data/customers.xml";
+            if (Directory.Exists("/data"))
+            {
+                path = "/" + path;
+            }
+            using var writer = new FileStream(path, FileMode.Truncate);
             serializer.Serialize(writer, this);
             
         }
@@ -110,7 +116,13 @@ namespace ELinkx.Model
         public static Customers Load()
         {
             var serializer = new XmlSerializer(typeof(Customers));
-            using var reader = new FileStream("cusomers.xml", FileMode.OpenOrCreate);
+            var path = "data/customers.xml";
+            if (Directory.Exists("/data"))
+            {
+                path = "/" + path;
+            }
+            
+            using var reader = new FileStream(path, FileMode.OpenOrCreate);
 
             try
             {
