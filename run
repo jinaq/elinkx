@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+docker build  -t  jinaq.elinkx .
+docker run -p 5001:80 jinaq.elinkx

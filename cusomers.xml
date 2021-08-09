@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Customers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LastId>9</LastId>
+  <Customer>
+    <Customer>
+      <ID>1</ID>
+      <Name>test</Name>
+      <ICO>test</ICO>
+    </Customer>
+    <Customer>
+      <ID>2</ID>
+      <Name>tel</Name>
+      <ICO>25596641</ICO>
+    </Customer>
+    <Customer>
+      <ID>3</ID>
+      <Name>pokus</Name>
+      <ICO>00029947</ICO>
+    </Customer>
+    <Customer>
+      <ID>9</ID>
+      <Name>aaasdasd</Name>
+      <ICO>00029807</ICO>
+    </Customer>
+  </Customer>
+</Customers>
